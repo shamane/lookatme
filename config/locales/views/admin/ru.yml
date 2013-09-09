@@ -1,0 +1,32 @@
+ru:
+  admin:
+    disciplines:
+      index:
+        id: '№'
+        user_name: 'Никнейм'
+        email: 'E-mail'
+        discipline_name: 'Название дисциплины'
+        description: 'Описание'
+        actions: 'Действия'
+        votes_count: 'Колличество голосов'
+      confirmed_discipline:
+        approve: 'Принять'
+        reject: 'Отклонить'
+        destroy: 'Удалить'
+      approved_discipline:
+        destroy: 'Удалить'
+      show:
+        votes: 'Голоса:'
+        id: '№'
+        user_email: 'Email'
+      vote:
+        destroy: 'Удалить'
+      winner_discipline:
+        destroy: 'Удалить'
+        photos: 'Фотки медальок победителей'
+        add_photo: 'Добавить'
+    settings:
+      index:
+        tournaments_state: 'Текущий статус'
+        start: 'Начать игры'
+        stop: 'Остановить игры'

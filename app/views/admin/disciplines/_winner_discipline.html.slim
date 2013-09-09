@@ -1,0 +1,16 @@
+tr
+  td= winner_discipline.id
+  td= winner_discipline.user_name
+  td= winner_discipline.user_email
+  td= winner_discipline.name
+  td= winner_discipline.description
+  td= winner_discipline.votes_count
+
+  - if winner_discipline.photo
+    td= winner_discipline.photo.photo_file_name
+    td= link_to t('.destroy'), admin_discipline_photo_path(winner_discipline, winner_discipline.photo.id), :method => 'delete'
+  - else
+    td = form_for :photo, :url => admin_discipline_photos_path(winner_discipline), :html => { :multipart => true } do |f|
+      = f.file_field :photo
+      = f.submit t('.add_photo')
+

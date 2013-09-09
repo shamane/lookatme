@@ -1,0 +1,13 @@
+table#disciplines
+  tr
+    th= t('.id')
+    th= t('.user_name')
+    th= t('.email')
+    th= t('.discipline_name')
+    th= t('.description')
+    th= t('.votes_count')
+    th= t('.photo')
+  = render partial: 'winner_discipline', collection: @winners_disciplines
+  
+<br>
+= link_to "Вислать емейл победителям", send_notification_to_winners_admin_disciplines_path

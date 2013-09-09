@@ -1,0 +1,6 @@
+ru: 
+  controllers:
+    application:
+      user_not_confirmed: 'Регистрация пользователя не подтверждена!'
+      email_not_exist: 'Email не существует!'
+      tournaments_are_stoped: 'Игры оставновлены!'

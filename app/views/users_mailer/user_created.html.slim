@@ -1,0 +1,5 @@
+'Уважаемый #{@user.email}
+'пожалуйста подтвердите Вашу учотную запись
+<br>
+'Перейдите по ссылке
+#{confirmations_url(:token => @user.confirmation_token)}

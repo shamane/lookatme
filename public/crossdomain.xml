@@ -1,0 +1,9 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE cross-domain-policy 
+  SYSTEM "http://www.macromedia.com/xml/dtds/cross-domain-policy.dtd">
+<cross-domain-policy>
+  <allow-access-from domain="nooker.site11.com" />
+  <allow-access-from domain="nooker.site11.com" to-ports="3001" />
+  <allow-access-from domain="www.the-village.ru" />
+  <allow-access-from domain="*" />
+</cross-domain-policy>

@@ -1,0 +1,19 @@
+table#disciplines
+  tr
+    th= t('.id')
+    th= t('.user_name')
+    th= t('.email')
+    th= t('.discipline_name')
+    th= t('.description')
+    th= t('.actions')
+  = render :partial => 'confirmed_discipline', :collection => @confirmed_disciplines
+
+table#disciplines
+  tr
+    th= t('.id')
+    th= t('.user_name')
+    th= t('.email')
+    th= t('.discipline_name')
+    th= t('.description')
+    th= t('.votes_count')
+  = render :partial => 'approved_discipline', :collection => @approved_disciplines

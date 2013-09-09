@@ -1,0 +1,12 @@
+tr data-link="#{admin_discipline_path(confirmed_discipline)}"
+  td= confirmed_discipline.id
+  td= confirmed_discipline.user_name
+  td= confirmed_discipline.user_email
+  td= confirmed_discipline.name
+  td= confirmed_discipline.description
+  td
+    div
+      = link_to t('.approve'), approve_admin_discipline_path(confirmed_discipline), :class => 'approve'
+    div
+      = link_to t('.reject'), reject_admin_discipline_path(confirmed_discipline), :class => 'reject'
+  td= link_to t('.destroy'), admin_discipline_path(confirmed_discipline), :method => 'delete'

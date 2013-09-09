@@ -1,0 +1,6 @@
+'Уважаемый, (#{@vote.user.email})!
+'Спасибо за участие в голосовании, ваш голос был додан.
+'Подтвердите Ваш голос по ссылке:
+#{confirm_vote_url(@vote)}?confirmation_token=#{@vote.confirmation_token}&email=#{@vote.user.email}
+
+

@@ -1,0 +1,6 @@
+p= @discipline.name
+p= @discipline.description
+p= @discipline.votes_count
+
+javascript:
+  window.location.href = "#{root_url(:params => {:discipline_id => @discipline.id })}";

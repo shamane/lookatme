@@ -1,0 +1,8 @@
+h3= @discipline.name
+h4= t('.votes')
+
+table#votes
+  tr
+    th= t('.id')
+    th= t('.user_email')
+  = render :partial => 'vote', :collection => @votes

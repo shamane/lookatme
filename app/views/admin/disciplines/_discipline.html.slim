@@ -1,0 +1,10 @@
+td= confirmed_discipline.id
+td= confirmed_discipline.user_name
+td= confirmed_discipline.user_email
+td= confirmed_discipline.name
+td= confirmed_discipline.description
+td
+  div
+    = link_to t('.approve'), admin_discipline_approve_path(confirmed_discipline), :class => 'approve'
+  div
+    = link_to t('.reject'), admin_discipline_reject_path(confirmed_discipline), :class => 'reject'

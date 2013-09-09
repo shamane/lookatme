@@ -1,0 +1,43 @@
+
+# add new user and discipline
+curl -X POST 'http://c.xmarka.net:3001/users' -d 'user[email]=schamane.vzl@gmail.com&user[password]=1qaz2wsx&user[password_confirmation]=1qaz2wsx&user[name]=vzl1&disciplines[name]=name&disciplines[description]=description'
+# short way 
+curl -X POST 'http://c.xmarka.net:3001/users' -d 'user[email]=schamane.vzl@gmail.com&user[name]=vzl1&disciplines[name]=name&disciplines[description]=description'
+
+[registration of user and dicline]
+after that go email with token and link
+http://c.xmarka.net:3001/confirmations/confirm?token=hfevbyrjbtokebdttbjstrjcf
+
+[registration of dicline]
+http://c.xmarka.net:3001/disciplines/43/confirm?email=schamane.vzl@gmail.com
+
+after that admin  must got to <host>/admin and manually approve a user disclipline
+
+[process of like a discipline]
+
+curl -X GET 'http://c.xmarka.net:3001/disciplines/43/like?email=schamane.vzl@gmail.com'
+
+43 - its approved id of discipline
+email - existing user in database
+
+if user which send like of discipline  existing after that send email with confirmation url
+
+http://c.xmarka.net:3001/votes/11/confirm?confirmation_token=xidilhohzswqvlmncebrgfzfa&email=schamane.vzl@gmail.com
+
+
+
+
+
+
+#
+# before that run
+
+# admin
+#  http://c.xmarka.net:3001/admin
+email: 'admin@lookatme.ru'
+password: 'zaq1xsw2qwer'
+
+#  http://c.xmarka.net:3001/admin
+
+rake settings:generate_default
+admin/settings
