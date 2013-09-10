@@ -39,7 +39,7 @@ module Lookatmepuma
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}').to_s]
     config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}')]
-    config.i18n.default_locale = :ru
+    config.i18n.default_locale = :en
 
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
@@ -50,7 +50,13 @@ module Lookatmepuma
 
     config.generators do |g|
       g.template_engine :slim
-      g.test_framework :rspec
+      g.test_framework :rspec, fixture: true
+      g.fixture_replacement :factory_girl, dir: 'spec/factories'
+      #g.view_specs false
+      #g.helper_specs false
+      #g.stylesheets = false
+      #g.javascripts = false
+      #g.helper = false
     end
 
     # Enable escaping HTML in JSON.

@@ -28,3 +28,22 @@ In config/applicaton.rb add
 config.generators do |g|
   g.test_framework :rspec
 end
+
+# lists all rake tasks
+rake -T
+
+
+#Prepare the database for testing by running the commands:
+$ rake db:migrate
+$ rake db:test:prepare
+
+# Initialize the database by running:
+$ rake db:migrate
+$ rake db:seed
+
+#You can run rake db:reset whenever you need to recreate the database:
+$ rake db:reset
+
+#You should set up the database for the test environment:
+$ rake db:test:prepare
+

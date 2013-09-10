@@ -22,3 +22,4 @@ public/assets
 public/system
 test
 tmp
+*.swp

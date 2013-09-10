@@ -48,7 +48,7 @@ group :test do
 
   gem "capybara", '1.1.4'
   gem "capybara-webkit", '0.9.0'
-
+  gem "email_spec"
 
   gem 'factory_girl'
   gem 'factory_girl_rails', require: false
