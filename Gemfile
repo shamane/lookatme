@@ -12,6 +12,7 @@ gem 'devise', '2.2.2'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
+  gem 'slim',         '~> 2.0.0'
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
 
@@ -31,4 +32,24 @@ gem "slim-rails"
 group :development do
   gem 'capistrano'
   gem 'pry-rails'
+end
+
+group :test do
+  gem "rspec"
+  gem "rspec-rails"
+  gem "cucumber"
+  gem "cucumber-rails", :require => false
+  gem "database_cleaner"
+
+#  gem "capybara", '2.1.0'
+#  gem "capybara-webkit", '1.0.0'
+
+  gem "capybara", '1.1.4'
+  gem "capybara-webkit", '0.9.0'
+
+
+  gem 'factory_girl'
+  gem 'factory_girl_rails', require: false
+#  gem 'rspec-expectations'
+#  gem 'fabrication' #for test fixture creation
 end

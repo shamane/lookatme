@@ -1,0 +1,30 @@
+rails g rspec:install
+    create  .rspec
+    create  spec
+    create  spec/spec_helper.rb
+
+rails g cucumber:install --capybara --rspec
+      create  config/cucumber.yml
+      create  script/cucumber
+       chmod  script/cucumber
+      create  features/step_definitions
+      create  features/support
+      create  features/support/env.rb
+       exist  lib/tasks
+      create  lib/tasks/cucumber.rake
+        gsub  config/database.yml
+        gsub  config/database.yml
+       force  config/database.yml
+
+features/support/env.rb.
+Capybara.javascript_driver = :webkit
+
+
+#features/support/env.rb
+#Capybara.default_driver = :selenium
+
+
+In config/applicaton.rb add
+config.generators do |g|
+  g.test_framework :rspec
+end

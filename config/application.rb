@@ -50,6 +50,7 @@ module Lookatmepuma
 
     config.generators do |g|
       g.template_engine :slim
+      g.test_framework :rspec
     end
 
     # Enable escaping HTML in JSON.
