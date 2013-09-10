@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130708173614) do
+ActiveRecord::Schema.define(:version => 20130712171614) do
 
   create_table "disciplines", :force => true do |t|
     t.string   "name"
@@ -23,6 +23,15 @@ ActiveRecord::Schema.define(:version => 20130708173614) do
     t.datetime "updated_at",                        :null => false
     t.string   "state"
     t.integer  "votes_count",        :default => 0
+  end
+
+  create_table "photos", :force => true do |t|
+    t.integer  "discipline_id"
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
+    t.datetime "photo_created_at"
+    t.datetime "photo_updated_at"
   end
 
   create_table "settings", :force => true do |t|

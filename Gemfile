@@ -21,17 +21,19 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
   gem 'skim'
+  gem 'slim-rails'
 end
 
 gem 'jquery-rails'
 gem 'stateflow'
 gem 'meta-tags', :require => 'meta_tags'
 gem 'paperclip', "~> 2.3"
-gem "slim-rails"
+
 
 group :development do
   gem 'capistrano'
   gem 'pry-rails'
+  gem 'better_errors'
 end
 
 group :test do
