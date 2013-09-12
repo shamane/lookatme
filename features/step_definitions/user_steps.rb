@@ -1,8 +1,8 @@
 ### UTILITY METHODS ###
 
 def create_visitor
-  @visitor ||= { :email => "admin@lookatme.lu",
-    :password => "12345678", :password_confirmation => "12345678" }
+  @visitor ||= { :email => "example@example.com",
+    :password => "changeme", :password_confirmation => "changeme" }
 end
 
 def find_user
@@ -30,7 +30,7 @@ end
 def sign_up
   delete_user
   visit '/users/sign_up'
-  #fill_in "user_name", :with => @visitor[:name]
+#  fill_in "user_name", :with => @visitor[:name]
   fill_in "user_email", :with => @visitor[:email]
   fill_in "user_password", :with => @visitor[:password]
   fill_in "user_password_confirmation", :with => @visitor[:password_confirmation]
@@ -142,7 +142,7 @@ end
 Then /^I should be signed out$/ do
 #  page.should have_content "Sign up"
 #  page.should have_content "Login"
-#  page.should_not have_content "Logout"
+  page.should_not have_content "Logout"
 end
 
 Then /^I see an unconfirmed account message$/ do
@@ -153,25 +153,24 @@ Then /^I see a successful sign in message$/ do
   page.should have_content "Signed in successfully."
 end
 
-#Then /^I should see a successful sign up message$/ do
-#  page.should have_content "Signed in successfully."
-#end
+Then /^I should see a successful sign up message$/ do
+  page.should have_content "Welcome! You have signed up successfully."
+end
 
 Then /^I should see an invalid email message$/ do
-#  page.should have_content "Email is invalid"
-#  page.should have_content 'Invalid email or password.'
+  page.should have_content "Email is invalid"
 end
 
 Then /^I should see a missing password message$/ do
-#  page.should have_content "Password can't be blank"
+  page.should have_content "Password can't be blank"
 end
 
 Then /^I should see a missing password confirmation message$/ do
-#  page.should have_content "Password doesn't match confirmation"
+  page.should have_content "Password doesn't match confirmation"
 end
 
 Then /^I should see a mismatched password message$/ do
-#  page.should have_content "Password doesn't match confirmation"
+  page.should have_content "Password doesn't match confirmation"
 end
 
 Then /^I should see a signed out message$/ do

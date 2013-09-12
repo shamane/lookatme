@@ -1,6 +1,6 @@
 class HelloController < ApplicationController
 
-#  def inde
-#  end
+  def index
+  end
 
 end
