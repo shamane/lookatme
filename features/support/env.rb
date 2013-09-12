@@ -23,8 +23,8 @@ require 'factory_girl_rails'
 # steps to use the XPath syntax.
 Capybara.default_selector = :css
 
-
-Capybara.javascript_driver = :webkit
+#need only if will be installed  'gem capybara-webkit'
+#Capybara.javascript_driver = :webkit
 
 # By default, any exception happening in your Rails application will bubble up
 # to Cucumber so that your scenario will fail. This is a different from how 
