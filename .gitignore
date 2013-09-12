@@ -5,7 +5,7 @@
 .idea
 .rbenv-version
 .ruby-version
-.rvmrc
+#.rvmrc
 .powder
 .powrc
 #.rspec

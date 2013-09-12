@@ -43,15 +43,15 @@ group :test do
   gem "cucumber-rails", :require => false
   gem "database_cleaner"
 
-#  gem "capybara", '2.1.0'
+  gem "capybara", '2.1.0'
 #  gem "capybara-webkit", '1.0.0'
 
-  gem "capybara", '1.1.4'
-  gem "capybara-webkit", '0.9.0'
+#  gem "capybara", '1.1.4'
+#  gem "capybara-webkit", '0.9.0'
   gem "email_spec"
 
-  gem 'factory_girl'
-  gem 'factory_girl_rails', require: false
+#  gem 'factory_girl'
+  gem 'factory_girl_rails'
 #  gem 'rspec-expectations'
 #  gem 'fabrication' #for test fixture creation
 end

@@ -47,3 +47,5 @@ $ rake db:reset
 #You should set up the database for the test environment:
 $ rake db:test:prepare
 
+# http://pivotallabs.com/cucumber-performance-and-warden-s-token-authenticatable/
+cucumber -p faster
