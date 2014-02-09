@@ -30,6 +30,7 @@ group :test do
   gem 'rspec', '2.14.1'
   gem 'rspec-rails', '2.14.1'
   gem 'rspec-expectations', '2.14.5'  
+  gem 'shoulda', '3.5.0'
   gem 'factory_girl', '4.3.0'
   gem 'factory_girl_rails', '4.3.0'  
   gem 'cucumber', '1.3.10'
@@ -38,4 +39,8 @@ group :test do
   gem 'selenium-webdriver', '2.39.0'
   gem 'capybara', '1.1.4'
   gem 'email_spec', '1.5.0'
+  gem 'faker', '1.2.0'
 end
+
+gem 'execjs'
+gem 'therubyracer','0.10.2', :platform => :ruby

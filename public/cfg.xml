@@ -1,4 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <cfg>
-  <vget mode='golosovanie' path='specials.lookatme.ru/puma_after_hours'/>
+  <vget mode='golosovanie' path='url.path/hours'/>
 </cfg>
